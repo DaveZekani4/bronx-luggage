@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+
+    
+</head>
+<style>
+    *{
+        background-color: #fff;
+        font-family: 'Arapey', serif;
+    }
+
+    #close-button{
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+    .faq {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .question {
+        background: #DFB392;
+        margin-bottom: 10px;
+        border: 1px solid #a9a3a3;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 10px;
+    }
+
+    .question p {
+        background: #DFB392;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .answer {
+        display: none;
+    }
+
+    .question.active .answer {
+        display: block;
+    }
+
+</style>
+    
+<body>
+
+    <h1>FAQ'S</h1>
+    <i class="fa fa-window-close" id="close-button" onclick="goToHomePage()"></i>
+    <p>(Click on the questions to view the answers)</p>
+
+    <!-- This is the div that contains the numbers that contain the questions and answers -->
+    <div class="faq">
+        <div class="question">
+          <p>Question 1? <br> Q: What is the difference between a suitcase and a carry-on bag?</p>
+          <div class="answer">
+            <p>A: A suitcase is typically larger and intended for checked luggage on a plane, while a carry-on bag is smaller and meant to be brought onto the plane with you as a personal item.</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 2? <br> Q: What size luggage is allowed as a carry-on?</p>
+          <div class="answer">
+            <p>A: The exact size and weight limit for carry-on luggage can vary depending on the airline, but a common maximum size is around 22 x 14 x 9 inches (56 x 36 x 23 cm) and weight limit is around 22 pounds (10 kg).</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 3? <br> Q: How can I make sure my luggage is durable enough for travel?</p>
+          <div class="answer">
+            <p>A: Look for luggage made from sturdy materials such as polycarbonate, nylon, or ballistic nylon, with reinforced corners and zippers. Additionally, check the warranty or guarantee offered by the manufacturer.</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 4? <br> Q: Are luggage locks necessary?</p>
+          <div class="answer">
+            <p>A: While not strictly necessary, luggage locks can provide extra security and peace of mind when traveling, especially if you are checking your luggage.</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 5? <br> Q: Can I bring liquids in my luggage?</p>
+          <div class="answer">
+            <p>A: Yes, but there are restrictions on the amount and types of liquids that are allowed, especially in carry-on luggage. It is best to check with your airline or the Transportation Security Administration (TSA) for specific guidelines.</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 6? <br> Q: How do I clean my luggage?</p>
+          <div class="answer">
+            <p>A: The best way to clean luggage depends on the material it is made from. For example, a soft-sided bag might be cleaned with a damp cloth and mild soap, while a hard-sided suitcase might require a cleaner specifically designed for plastic or metal. Check the manufacturer's instructions or website for specific cleaning recommendations.</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Question 7? <br> Q: What if my luggage is lost or damaged during travel?</p>
+          <div class="answer">
+            <p>A: If your luggage is lost, damaged, or delayed during travel, you should report it to the airline as soon as possible and file a claim for compensation. Many airlines have specific procedures and time limits for doing so, so be sure to check with them for instructions.</p>
+          </div>
+        </div>
+      </div>      
+      
+      
+<script>
+        // Get all the questions
+        var questions = document.querySelectorAll('.question');
+
+        // Add click event listener to each question
+        questions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            // Toggle the active class on the clicked question
+            question.classList.toggle('active');
+        });
+        });
+
+        //This function is used so on click of the close button, the view will be redirected back to the homepage which is contained in this file
+        function goToHomePage() {
+          window.location.href = '../index.html';
+        }
+
+</script>
+</body>
+</html>

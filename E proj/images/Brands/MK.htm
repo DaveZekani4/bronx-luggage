@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=michael+kors+luggage+logo+black+background&id=B0BA62A83449B0EA513BC493DD5B33350E9D2924&FORM=IQFRBA";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=dba355bd133e4c04JmltdHM9MTY4MjgxMjgwMCZpZ3VpZD0xZGFjNGQ1Ni1mZDIyLTY5NmMtMDU5NC01Y2I5ZjkyMjY3YWUmaW5zaWQ9NTM3OA&ptn=3&hsh=3&fclid=1dac4d56-fd22-696c-0594-5cb9f92267ae&u=a1L2ltYWdlcy9zZWFyY2g_cT1taWNoYWVsK2tvcnMrbHVnZ2FnZStsb2dvK2JsYWNrK2JhY2tncm91bmQmaWQ9QjBCQTYyQTgzNDQ5QjBFQTUxM0JDNDkzREQ1QjMzMzUwRTlEMjkyNCZGT1JNPUlRRlJCQQ&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

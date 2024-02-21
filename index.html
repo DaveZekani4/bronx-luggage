@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronx Luggage</title>
+    <link rel="icon" type="image/x-icon" href="Photos/Bronx Logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/assets/owl.theme.default.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="js_files/jquery.js"></script> 
+    <!-- Owl Carousel JavaScript -->
+    <script src="./dist/owl.carousel.min.js"></script>
+
+    <!-- My JS Files -->
+    <script src="js_files/angular.min.js"></script>
+    <script src="js_files/angular-router.js"></script>
+    <script src="js_files/angular.js"></script>
+    <script src="js_files/main.js"></script>   
+
+<!-- bootstrap -->
+
+
+</head>
+<body ng-app="module" ng-controller="myController">
+    <div class="container">
+        <!-- I declared the controller in this frame and this controller in the nav bar is to navigate to a div on click -->
+       <div class="landingpage_frame1" >
+            <header>
+                <!-- These first two spans are for the box on the top right psge of the website -->
+                
+                <span class="main-box"><span class="mini-box"></span></span>
+                    
+                <nav class="menu">
+                    <div class="dropdown">
+                    <a href="../Bronx Luggage/Men/index.html" class="nav">MEN</a>
+                    <div class="dropdown-content">
+                        <a href="">Backpacks</a>
+                        <a href="">Duffel Bags</a>
+                        <a href="">Messenger Bags</a>
+                        <a href="">Suitcases</a>
+                        <a href="">Travel Accessories</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <a href="../Bronx Luggage/E proj/index.html" class="nav">WOMEN</a>
+                    <div class="dropdown-content">
+                        <a href="">Backpacks</a>
+                        <a href="">Duffel Bags</a>
+                        <a href="">Handbags</a>
+                        <a href="">Suitcases</a>
+                        <a href="">Travel Accessories</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <a href="../Bronx Luggage/Accessories/index.html" class="nav">ACCESSORIES</a>
+                    <div class="dropdown-content">
+                        <a href="">Luggage Tags</a>
+                        <a href="">Locks</a>
+                        <a href="">Packing Cubes</a>
+                        <a href="">Travel Pillows</a>
+                        <a href="">Umbrellas</a>
+                    </div>
+                    </div>
+
+                  
+                    <a href="../Bronx Luggage/Gallery/gallery.html" class="nav">GALLERY</a>  
+                    
+                </nav>
+                  
+                <!-- This part is after the logo in the header section -->
+                <span class="bronxlogo"><img src="Photos/Bronx Logo.png" width="150" alt="BronxLuggage"></span>
+
+
+                <span class="person"><img src="Photos/person.png" width="24" alt=""></span>
+
+                <!-- This keeps counts of the visits -->
+                <span class="visit_counter" my-visit-count></span>
+
+                  
+                <!-- The scroll to func is frim the angular controller(myControoler) to navigate to another div on click to the specified id -->
+                <nav class="menu">
+                    <a href="" ng-click="scrollTo('aboutus')">ABOUT US</a>
+                    <a href="" ng-click="scrollTo('contactus')">CONTACT US</a>
+                    <a ng-href="FAQ_page/index.html">FAQ's</a>
+                </nav>
+                  
+
+                <!-- This is the search bar -->
+                <div class="search_bar">
+                    <span class="search"><img src="Photos/search.png" width="17" alt=""></span>
+                    <input type="text" placeholder="Search">
+                    <span class="basket"><img src="Photos/basket.png" width="20" alt=""></span>
+                </div>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+
+            </header>
+
+
+            <div class="mid-space">
+                <div class="text_bag">
+                        <div class="intro_text">
+                            <p>TRENDING COLLECTION<span><img src="Photos/lightening.png" width="10" alt=""></span></p>
+                            <h1>We Care <span class="shooting_star"><img src="Photos/shooting_star.png" width="40" alt=""></span> <br> About Daily <br> Load </h1> 
+                            <p>The beauty of receiving high quality <br> luggage is a truly amazing feeling</p>
+                        </div>
+                        <div class="bags_display">
+                            <img src="" alt="">
+                        </div>
+                </div>
+
+                
+
+                <div class="frame1_btns">
+                        <a href="" class="shop_now"><p>SHOP NOW</p><span><img src="Photos/right_arrow.png" width="25" alt=""></span></a>
+                        <a href="" class="watch"><span><img src="Photos/video.png" width="28" alt=""></span><p>WATCH VIDEO</p></a>
+                </div>
+            </div>
+
+            <div id="image-slider" class="image-display" ng-controller="pictures">
+                <img src="Photos/star.png" width="30" class="star" alt="">
+                <img src="./Photos/big_arrow.png" width="30" class="big_arrow"></img>
+                <img ng-repeat="pic in pic_data" ng-src="{{pic}}" ng-if="$index === currentPicIndex">
+                <img src="./Photos/small_arrow.png" width="28" class="small_arrow"></img>
+                <img src="Photos/star.png" width="30" class="star2" alt="">
+            </div>
+          
+          
+        </div>
+
+       <div class="landingpage_frame2">
+            <div class="display_section">
+                <div class="display">
+                    <img src="Pictures/duffel2.png" width="360" alt="">
+                    <h2>First Time Buyer Offer</h2>
+                    <p>Get $100 discount after their first five purchases</p>
+                </div>
+        
+                <div class="display">
+                    <img src="Pictures/accessory.png" width="460" alt="">
+                    <h2>Refer A Friend</h2>
+                    <p>Get $100 discount after their first credit</p>
+                </div>
+        
+                <div class="display">
+                    <img src="Pictures/tb.png" width="360" alt="">
+                    <h2>Premium Savings</h2>
+                    <p>Increase your savings up to 6%</p>
+                </div>
+            </div>
+
+            <p class="discover">DISCOVER MORE</p>
+            <div class="text-plank">
+                <div class="text_span">
+                    <span>DESIGNER BAGS</span> <span>COLORS</span> <span>SIZES</span> <span>ACCESSORIES</span> <span>LUGGAGE</span> <span>BACKPACKS</span> <span>HANDBAGS</span>
+                </div>
+            
+                <!-- For the sliding images and their buttons -->
+                <button id="prev" class="fa fa-caret-left"></button>
+                  
+                <div id="pic_slider" class="image-display owl-carousel owl-theme" ng-controller="slider">           
+                    <div ng-repeat="pic in slider_data">
+                        <img ng-src="{{pic}}" >
+                    </div>
+                </div>
+
+                <button id="next" class="fa fa-caret-right"></button>
+
+
+            </div>
+    
+        </div>
+
+
+        <!-- This is the div for frame 3 -->
+        <div class="landingpage_frame3">
+
+            <div class="head-text">
+                <p class="variant">VARIANT</p>
+                <h1>OUR <br> COLLECTION</h2>
+    
+               <div class="tops">
+                    <p >MEN WEAR</p>
+                    <p >WOMEN WEAR</p>
+                    <p >BAGPACKS</p>
+                    <p >SUITCASES</p>
+               </div>
+
+                <br>
+
+                <div class="bottoms">
+                    <p >BAG ACCESSORIES</p>
+                    <p >LUGGAGE</p>
+                    <p >BAGS</p>
+                </div>
+            </div>
+
+            <div ng-controller="slides" id="owl-carousel" class="owl-carousel">
+                <div ng-repeat="slide in slides_data" class="item">
+                    <img ng-src="{{slide}}" width="120" height="250" alt="slide">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="aboutus" class="landingpage_frame4">
+            <div class="shop_picture">
+                <img src="https://sc04.alicdn.com/kf/H9541d320aed446d8ac20625a41bd834df/247976592/H9541d320aed446d8ac20625a41bd834df.jpg" height="600" width="700" alt="">
+            </div>
+            <div class="about_us">
+                <h1>ABOUT US</h1>
+                <p>
+                    <span>Bronx Luggage</span> is a renowned luggage store that has been providing high-quality travel gear to customers for many years. We understand that receiving high-quality luggage is an amazing feeling, and that's why we offer a wide selection of luggage sets from affordable to high-end brands. <br>
+                    Our store is located in the Festival Marketplace, making it easy for our customers to find us and access our products. We believe that great luggage is not just a travel accessory but also an investment that can be passed down from family members who are experienced travelers. That's why we take pride in offering a selection of high-quality sets of luggage that will last a lifetime. <br>
+
+                    Thank you for choosing <span>Bronx Luggage</span> for your travel needs. We look forward to serving you!
+                </p>
+            </div>
+        </div>
+
+        <div class="landingpage_frame5" id="contactus"> 
+            <h1>Contact Us</h1>
+            <div class="contact_container">
+              <div class="contact_info">
+                <div class="address">
+                  <i class="fa fa-map-marker"></i>
+                  <h3>ADDRESS</h3>
+                  <p>Festival Marketplace</p>
+                </div>
+          
+                <div class="email">
+                  <i class="fa fa-envelope"></i>
+                  <h3>EMAIL</h3>
+                  <p>www.festivalmarketplace@gmail.com</p>
+                </div>
+          
+                <div class="phone">
+                  <i class="fa fa-phone"></i>
+                  <h3>CALL US</h3>
+                  <p>1(+12242)454, 1(+3555)3536</p>
+                </div>
+          
+                <div class="socials">
+                  <h3>OUR SOCIALS</h3>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa fa-pinterest"></i></a>
+                </div>
+              </div>
+          
+              <div class="feedback_container">
+                <h1>FeedBack</h1>
+
+                <!-- What should be in the parameter of this <formspree-email> is the company's actual email or any actual email address incase you want to test it out -->
+                    
+                <form id="contact-form" method="POST" action="https://formspree.io/f/<formspree-email>" autocomplete="off">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                            
+                    <button type="submit">Send</button>
+                </form>
+                  
+              </div>
+            </div>
+          </div>
+          
+
+        <div class="landingpage_frame6">
+            <span class="border"></span>
+            <h2><span>BRONX</span> TICKING TIMER</h2>
+            <!-- I am using Javascript to set the values of these tags -->
+            <h1 class="date"></h1>
+
+            <h1 class="time" id="time"></h1>
+            <p class="location" id="time"></p>
+        </div>
+
+        <!-- Site Map -->
+        <div class="landingpage_frame7">
+            <img src="Photos/Bronx Logo.png" width="140" height="140"  alt="">
+
+            <h1>SITE MAP</h1>
+            <div class="rows">
+                <div class="row1">
+                    <a href="#">Home Page</a>
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Accessory</a>
+                    <a href="../Bronx Luggage/Gallery/gallery.html">Gallery</a>
+                </div>
+                <div class="row2">
+                    <a href="" ng-click="scrollTo('aboutus')">About Us</a>
+                    <a href="" ng-click="scrollTo('contactus')">Contact Us</a>
+                    <a href="FAQ_page/index.html">FAQ's</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

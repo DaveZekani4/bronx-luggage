@@ -1,0 +1,1176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+}
+
+.landingpage_frame1 header{
+    display: flex;
+}
+
+.landingpage_frame1 .main-box{
+    width: 85px;
+    height: 88px;
+    left: 0px;
+    top: 0px;
+    background: #DFB392;
+}
+
+/* this is for the nav menus in frame1 */
+.menu{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+/* for the bronxlogo down to the search bar in frame1 */
+.heart{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+/* this is for the visit count */
+.visit_counter{
+    margin-top: 44px;
+    border: 2px solid black;
+    background-color: #DFB392;
+    height: 26px;
+    padding: 5px;
+}
+
+.person{
+    margin-top: 44px;
+    margin-left: 60px;
+    margin-right: 15px;
+}
+
+.search_bar{
+    display: flex;
+    width: 200px;
+    height: 34px;
+    padding: 10px;
+    background: rgba(223, 179, 146, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+
+.search_bar p{
+    margin-left: 6px;
+    margin-right: 89px;
+}
+
+.search_bar input{
+   width: 140px;
+   border: none;
+   padding: 5px;
+   margin-top: -7px;
+   height: 30px;    
+   background: rgba(223, 179, 146, 0.1);
+}
+
+.search_bar input:focus{
+    outline: none;
+}
+
+.hamburger{
+  display: none;
+}
+
+/* These are for the nav options dropdown */
+.menu {
+    display: flex;
+}
+
+.dropdown{
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0.2s ease-in-out;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu a:hover {
+    color: #A9313B;
+  }
+  
+  .dropdown a:hover {
+    color: #A9313B;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+/* for the mid space ont the landing page */
+.mid-space{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.intro_text h1{
+    font-size: 80px;
+    text-align: left;
+}
+
+.shooting_star{
+    margin-left: 40px;
+}
+
+.frame1_btns{
+    margin-top: 40px;
+    border: none;
+}
+
+.frame1_btns button{
+    border: transparent;
+}
+
+.shop_now{
+    background: #DFB392;
+    display: flex;
+    border-radius: 6px;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: #000;
+ }
+
+.shop_now p {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.frame1_btns{
+    display: flex;
+}
+
+.watch{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}
+
+.watch img{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.watch p{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+    
+    /* This is for the image slider in frame 1 */
+.image-display{
+    margin-left: 600px;
+    margin-top: -470px;
+}
+
+#image-slider img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+ .big_arrow{
+    position: absolute;
+    right: 790px;
+    top: 420px;
+ } 
+
+ .small_arrow{
+    position: absolute;
+    right: 170px;
+    top: 220px;
+ }
+
+ .star{
+    position: absolute;
+    top: 200px;
+ }
+
+ .star2{
+    position: absolute;
+    right: 200px;
+    top: 380px;
+ }
+   
+/* this is the styling for the frame 2 section */
+.landingpage_frame2{
+    cursor: default;
+}
+.display_section{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+.display p, h2{
+    text-align: center;
+}
+
+
+ .discover{
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+ } 
+
+ #pic_slider .owl-item img {
+  width: 100%;
+  border: 1px solid #EDE9E0;
+  border-radius: 7px;
+  background: #DCBB9A;
+}
+
+#pic_slider{
+  max-width: 1300px;
+  margin-top: 50px;
+  margin-left: 38px;
+} 
+
+.text_span{
+    text-align: center;
+    background-color: #DFB392;
+    color: #fff;
+    padding: 10px;
+}
+
+.text_span span{
+margin-right: 10px;
+}
+
+/* for the slider images buttons */
+#prev,  #next{
+    color: #A9313B;
+    font-size: 24px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1380px;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  #next {
+    right: 0;
+  }
+
+  #prev:hover, #next:hover{
+    cursor: pointer;
+  }
+
+  /* This styling is for frame3 */
+   .landingpage_frame3{
+    background-color: #f8f6f6;
+   }
+
+   .head-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 90px;
+    padding: 30px 20px 20px 20px;
+    justify-content: center;
+  }
+  
+  .variant{
+    color: #A9313B;
+    font-size: 30px;
+    padding: 20px;
+}
+
+  .head-text p, .head-text h1 {
+    margin: 0;
+  }
+
+  .head-text h1{
+    text-align: left;
+    font-size: 50px;
+    color: #000;
+    margin-right: 50px;
+}
+
+.tops, .bottoms{
+  display: flex;
+}
+  
+  .tops p{
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    background-color: #DFB392;
+    border: 2px solid white;
+    z-index: 2;
+  }
+  
+  .bottoms p {
+    padding: 10px;
+    border: 2px solid white;
+    color: #fff;
+    background-color: #DFB392;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  /* Frame 4 styling */
+.landingpage_frame4{
+    margin-top: 60px;
+    display: flex;
+    height: 600px;
+}
+  
+.landingpage_frame4 h1{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding: 28px;
+}
+
+.landingpage_frame4 p {
+    padding: 38px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.landingpage_frame4 p span{
+    color: #A9313B;
+    
+}
+
+.about_us{
+  background: #DFB392;
+}
+
+/* This styling is for frame 5 */
+.landingpage_frame5 {
+    text-align: center;
+  }
+  
+  .landingpage_frame5 h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    border-bottom: 3px solid #A9313B;
+    font-weight: lighter;
+    display: inline-block;
+  }
+  
+  .contact_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .contact_info {
+    background-color: #A9313B;
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .contact_info i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .contact_info h3 {
+    margin-top: 10px;
+  }
+  
+  .feedback_container {
+    flex: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A9313B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+/* this is for frame 6 */
+.landingpage_frame6 {
+    margin-top: 70px;
+}
+.landingpage_frame6 .border {
+    width: 1200px;
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    background: #383737;
+}
+.landingpage_frame6 h2 {
+    margin-top: 50px;
+}
+
+.landingpage_frame6 h2 span{
+    color: #A9313B;
+}
+
+.date{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.time{
+    background-image: url(Pictures/timer-container.png);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.location{
+    margin-top: -32px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.demarcation {
+    display: inline-block;
+    width: 10px;
+    height: 60px;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin:0px 30px 0px 30px;
+  }
+  
+/* Last frame with site maps */
+.landingpage_frame7{
+    background: #A9313B;
+    color: #fff;
+    margin-top: 70px;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+}
+
+.landingpage_frame7 h1, .landingpage_frame7 img{
+    margin-top: 90px;
+    margin-left: 90px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.landingpage_frame7 img{
+    margin-top: 60px;
+}
+
+.rows{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.row1, .row2{
+    display: grid;
+    line-height: 30px;
+    margin-left: 200px;
+}
+
+.row1 a, .row2 a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.rows a:hover, .row2 a:hover {
+  color: #EDE9E0;
+}
+
+.rows a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #EDE9E0; 
+  transition: width 0.2s ease-in-out;
+}
+
+.rows a:hover::after {
+  width: 100%;
+}
+
+
+
+
+/* Chukwunna, this thing should work na beg I dey beg */
+@media screen and (max-width: 450px) {
+
+  /* This is for frame2 */
+  .landingpage_frame2{
+    margin-top: 300px;
+  }
+
+  .display_section{
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .display h2{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .display p{
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .discover{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 12px;
+  } 
+
+ #pic_slider .owl-item img {
+    width: 70px;
+  }
+
+  #prev, #next{
+    display: none;
+  }
+
+  #pic_slider{
+    margin-left: 0;
+ } 
+
+  /* This is for frame3 */
+  .head-text{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .variant{
+    margin-top: 5px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+   .head-text h1{
+    text-align: center;
+    font-size: 24px;
+    margin-right: -5px;
+    margin-bottom: 5px;
+}
+
+  .item img{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* This is for frame4 */
+  .shop_picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about_us p{
+    line-height: 1.3rem;
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  .about_us h1{
+    font-size: 26px;
+    padding: 10px;
+  }
+
+  /* This is for frame5 */
+  .landingpage_frame5{
+    margin-top: 8rem;
+    margin-left: 0;
+  }
+
+  .contact_container{
+    flex-direction: column;
+  }
+
+  .feedback_container form{
+    width: 280px;
+  }
+
+  /* frame 7 */
+  .landingpage_frame7 img{
+    width: 80px;
+    height: 80px;
+    margin-left: 3px;
+  }
+
+  .rows{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .row1, .row2{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #000;
+    font-size: 12px;
+  }
+
+  .landingpage_frame7 h1{
+    margin-left: 10px;
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width : 670px){
+
+  
+  /* This is for frame2 */
+  .landingpage_frame2{
+  margin-top: 10vh;
+  }
+  
+  .display_section{
+  flex-direction: column;
+  margin-top: 3vh;
+  margin-left: 3vw;
+  }
+  
+  .display img{
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  }
+  
+  .display p, h2{
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  }
+  
+  .display h2{
+  margin-top: 3vh;
+  }
+  
+  .display p{
+  margin-bottom: 5vh;
+  }
+  
+  .discover{
+  font-weight: bold;
+  margin-top: 3vh;
+  }
+  
+  #pic_slider .owl-item img {
+  width: 80px;
+  }
+  
+  #prev{
+    display: none;
+  }
+  #next{
+  margin-left: -5vw;
+  margin-top: 12vh;
+  }
+  
+  #pic_slider{
+  margin-left: 1vw;
+  }
+  
+  .text_span{
+  text-align: center;
+  background-color: #DFB392;
+  color: #fff;
+  padding: 5px;
+  }
+  
+  /* This is for frame3 */
+  .landingpage_frame3{
+  margin: 0;
+  }
+  
+  .head-text{
+  margin-top: 5vh;
+  flex-direction: column;
+  }
+  
+  .variant{
+  margin-top: 1vh;
+  font-size: 18px;
+  margin-right: 10vw;
+  }
+  
+  .head-text h1{
+  text-align: center;
+  font-size: 24px;
+  margin-right: -2vw;
+  margin-bottom: 5vh;
+  }
+  
+  .item img{
+  margin-top: 3vh;
+  width: 80px;
+  height: 80px;
+  }
+  
+  /* This is for frame 4 */
+  .landingpage_frame4{
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .shop_picture img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .about_us p{
+  line-height: 1.5rem;
+  font-size: 12px;
+  padding: 1vh;
+  }
+  
+  .about_us h1{
+  font-size: 30px;
+  padding: 2vh;
+  }
+  
+  /* This is for frame5 */
+  .landingpage_frame5{
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left: 1vw;
+  }
+  
+  .contact_container{
+  flex-direction: column;
+  }
+  
+  .feedback_container form{
+  width: 80%;
+  }
+  
+  /* frame 6 */
+  .landingpage_frame6 .border {
+  display: none;
+  }
+  
+  /* This is for frame 7 */
+  .landingpage_frame7 img{
+  width: 50px;
+  height: 50px;
+  margin-left: 1vw;
+  }
+  
+  .rows{
+  display: flex;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  }
+  
+  .row1, .row2{
+  margin-left: 1vw;
+  margin-right: 2vw;
+  color: #000;
+  }
+  
+  .landingpage_frame7 h1{
+  margin-left: 2vw;
+  }
+  
+  }
+
+  /* hide the original menu for smaller screens */
+  @media screen and (max-width: 789px) {
+    .main-box{
+      display: none;
+    }
+  
+    header{
+      background: #A9313B;
+      position: relative; /* Add this */
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .search_bar, .search{
+      display: none;
+    }
+    
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 2.4rem;
+      margin-right: 3rem;
+      justify-content: space-between;
+      height: 18px;
+      width: 24px;
+      cursor: pointer;
+    }
+    
+    /* These are for the bars of the hamburger */
+    .hamburger span {
+      display: block;
+      height: 3px;
+      width: 25px;
+      background-color: black;
+      border-radius: 2px;
+      transition: transform 0.3s ease-out;
+    }
+
+    /* This is me setting the hamburger's position both when active and inactive */
+    
+    .hamburger span:nth-child(1) {
+      transform: translateY(0);
+    }
+    
+    .hamburger span:nth-child(2) {
+      transform: translateY(6px);
+    }
+    
+    .hamburger span:nth-child(3) {
+      transform: translateY(12px);
+    }
+    
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -6px);
+    }
+  
+    .hamburger.active span{
+      z-index: 4;
+    }
+    
+    /* show the hamburger menu links */
+    .menu-item {
+      display: none;
+      padding: 20px 10px 10px 10px;
+      width: 200px;
+      margin-left: 30px;
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .hamburger-nav{
+      position: absolute;
+      top: 100%; /* Set this to the bottom of the header */
+      left: 0; /* Set this to the left of the header */
+      width: 100%; /* Set this to cover the entire width of the header */
+      border: 1px transparent;
+      background-color: #A9313B !important;
+      z-index: 3;
+    }
+    
+    .hamburger.active .menu-item {
+      display: flex;
+    }
+  
+    .hamburger.active .menu-item a {
+     text-decoration: none;
+     color: #DCBB9A;
+    }
+  
+  }
+  
+
+
+
+  @media screen and (max-width: 769px) {
+    /* CSS rules for smaller screens */
+   /* for frame1 */
+
+   /* .landingpage_frame1{
+      margin-bottom: -40px;
+   } */
+   .intro_text h1{
+    font-size: 60px;
+  }
+
+  .image-display {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -400px);
+  }
+
+  .star {
+    top: 236px;
+  }
+  .star2 {
+    right: 40px;
+    top: 44px;
+  }
+
+  .small_arrow {
+    right: 20px;
+    top: 257px;
+  }
+
+    .display_section {
+      flex-direction: column;
+      margin-top: -20rem;
+      margin-left: 20px;
+    }
+  
+    .display img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .display p, h2{
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .display h2{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  
+    .display p{
+      margin-bottom: 15px;
+    }
+
+    /* frame2 */
+    #pic_slider .owl-item img {
+      width: 100%;
+    }
+  
+    #prev {
+      display: none;
+    }
+  
+    #next {
+      display: none;
+    }
+  
+    #pic_slider {
+      margin-left: -2px;
+      margin-top: 27rem;
+    }
+  
+    .text_span{
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .text_span span{
+      margin-right: 10px;
+    }
+
+    /* For frame3 */
+    
+    .landingpage_frame3 {
+      margin-top: -20rem;
+      margin-bottom: 7rem;
+    }
+  
+    .head-text {
+      margin-top: 0;
+      flex-direction: column;
+    }
+  
+    .variant{
+      margin-top: 30px;
+      font-size: 30px;
+      margin-right: 0;
+    }
+  
+    .head-text h1{
+      text-align: center;
+      font-size: 50px;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  
+    .item img{
+      margin-top: 30px;
+      width: 150px;
+      height: 150px;
+    }
+  
+    .owl-nav{
+      display: none;
+    }
+  
+    /* For frame4 */
+    .landingpage_frame4 {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .shop_picture img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .about_us {
+      max-width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .about_us p{
+      font-size: 16px;
+    }
+  
+    .about_us h1{
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    /* Frame 5 */
+  
+    .landingpage_frame5{
+      margin-top: 200px;
+      margin-left: 0;
+    }
+  
+    .contact_container{
+      flex-direction: column;
+    }
+  
+    .feedback_container form{
+      width: 100%;
+    }
+
+    /* Frame6 */
+    .landingpage_frame6 .border {
+      display: none;
+    }
+
+    /* Frame7 */
+  
+    .landingpage_frame7 img{
+      width: auto;
+      height: auto;
+      margin-left: 0;
+    }
+  
+    .rows{
+      margin-right: 2rem;
+      margin-top: 20px;
+    }
+  
+    .row1, .row2{
+      margin-left: 2rem;
+      margin-right: 0;
+      color: #000;
+      text-align: center;
+    }
+
+    /* frame7 */
+  
+    .landingpage_frame7 h1{
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
